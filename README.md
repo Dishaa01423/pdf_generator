@@ -1,1 +1,1 @@
-# pdf_generator
+This repository contains a PDF generator tool that allows you to dynamically create PDF documents from various data sources. Whether you need to generate PDF document of any requiered text document i.e csv file , this tool simplifies the process.
