@@ -5,7 +5,9 @@ This Python script generates a multi-page PDF file from a CSV file using the `FP
 ##Prerequisites
 
 Python 3.x
+
 FPDF library
+
 pandas library
 
 ##Installation
@@ -13,6 +15,7 @@ pandas library
 1. Clone this repository to your local machine.
 
    git clone https://github.com/Dishaa01423/pdf-generator.git
+
    cd pdf-generator
    
 3. Install the required Python libraries.
@@ -22,17 +25,19 @@ pandas library
 ##Usage
 
 1. Prepare a CSV file named topics.csv in the following format:
-    Topic,Pages
-    Topic1,3
-    Topic2,2
-    ...
-    Topic: The topic header to be displayed on each page.
-    Pages: The number of pages for this topic.
+
+   Topic,Pages
+   Topic1,3
+   Topic2,2
+   ...
+   Topic: The topic header to be displayed on each page.
+   Pages: The number of pages for this topic.
    
-2. Run the script.
+3. Run the script.
+
     python generate_pdf.py
    
-4. The script will generate a file named output.pdf in the same directory.
+5. The script will generate a file named output.pdf in the same directory.
 
 ##Contributing
 
