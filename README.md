@@ -11,11 +11,13 @@ pandas library
 ##Installation
 
 1. Clone this repository to your local machine.
-    git clone https://github.com/yourusername/pdf-generator.git
-    cd pdf-generator
+
+   git clone https://github.com/Dishaa01423/pdf-generator.git
+   cd pdf-generator
    
 3. Install the required Python libraries.
-    pip install fpdf pandas
+
+   pip install fpdf pandas
    
 ##Usage
 
