@@ -1,48 +1,62 @@
 # PDF Generator from CSV
 
-This Python script generates a multi-page PDF file from a CSV file using the `FPDF` library. Each topic in the CSV file is displayed as a header on each page, with lined pages for writing notes. 
+This Python script generates a multi-page PDF file from a CSV file using the `FPDF` library. Each topic in the CSV file is displayed as a header on each page, with lined pages for writing notes.
 
-##Prerequisites
+## Introduction
 
-Python 3.x
+This script reads topics and the number of pages for each topic from a CSV file and generates a PDF file with each topic as the header. Each page contains lines for writing notes, and the topic is also displayed in the footer.
 
-FPDF library
+## Prerequisites
 
-pandas library
+- Python 3.x
+- `FPDF` library
+- `pandas` library
 
-##Installation
+## Installation
 
-1. Clone this repository to your local machine.
+1. Clone the repository:
 
-   git clone https://github.com/Dishaa01423/pdf-generator.git
+    ```bash
+    git clone https://github.com/Dishaa01423/pdf-generator.git
+    cd pdf-generator
+    ```
 
-   cd pdf-generator
-   
-3. Install the required Python libraries.
+2. Create and activate a virtual environment (optional but recommended):
 
-   pip install fpdf pandas
-   
-##Usage
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    ```
 
-1. Prepare a CSV file named topics.csv in the following format:
+3. Install the required packages:
 
-   Topic,Pages
-   Topic1,3
-   Topic2,2
-   ...
-   Topic: The topic header to be displayed on each page.
-   Pages: The number of pages for this topic.
-   
-3. Run the script.
+    ```bash
+    pip install -r requirements.txt
+    ```
 
+## Usage
+
+1. Prepare a `topics.csv` file with the following structure:
+
+    ```csv
+    Topic,Pages
+    Topic 1,2
+    Topic 2,3
+    ```
+
+2. Run the script:
+
+    ```bash
     python generate_pdf.py
-   
-5. The script will generate a file named output.pdf in the same directory.
+    ```
 
-##Contributing
+3. The generated PDF file will be saved as `output.pdf`.
 
-Contributions are welcome! If you find a bug or have a feature request, please open an issue. Feel free to fork the repository and submit a pull request.
+## Contributing
 
-##License
+Contributions are welcome! Please open an issue or submit a pull request for any changes.
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+## License
+
+This project is licensed under the MIT License.
+
